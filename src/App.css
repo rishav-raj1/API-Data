@@ -1,38 +1,87 @@
-.App {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #d2dbdd;
+}
+
+.heading_style {
+  padding: 30px 0;
   text-align: center;
+  font-family: "flamenco", cursive;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cards {
+  width: 100%;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  margin: 6%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 21.25%;
+  border-radius: 12px;
+  box-shadow: 0px 30px 10px -7px rgba(0, 0, 0, 0.1);
+  float: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card:hover {
+  box-shadow: 0px 30px 18 -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
 }
 
-.App-link {
-  color: #61dafb;
+.card_info {
+  background-color: #fff;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 16px 24px 24px 24px;
+  background-color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.card_userid {
+  font-family: "flamenco", cursive;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: #fff;
+}
+
+.card_title {
+  font-family: "flamenco", cursive;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #351010;
+  background-color: #fff;
+}
+
+.card_id {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "flamenco", cursive;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .card {
+    float: none;
+    margin: 5%;
+    width: 90%;
   }
 }
